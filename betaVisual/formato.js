@@ -1,5 +1,4 @@
 
-parseFloat
 function printa(){
 
     var nome = document.createTextNode(document.querySelector(".inputProd").value)
