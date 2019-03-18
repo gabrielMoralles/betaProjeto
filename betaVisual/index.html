@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Visual</title>
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
     <script src="formato.js"></script>
 </head>
 <body data-spy="scroll" data-target="navbar-item" >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <li class="navbar-toggler-icon active"></li>
-                <a class="navbar-brand">betaProject</a>
+                <a class="navbar-brand" id="title">Doces!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav mr-auto" id="navtext">
                     <li class="nav-item active">
                       <a class="nav-link" href="https://github.com/gabrielMoralles/betaProjeto">Git betaProject <span class="sr-only">Inicial</span></a>
                     </li>
@@ -35,6 +35,16 @@
                 </div>
               </nav>
               <body id="body">
+               <div class="inputs">
+                        <input type="text" placeholder="Insira o produto" class="inputProd" >
+                        <input type="text" placeholder="Insira o preço" class="inputPrec">
+                        <p class="text">Insira a data de fabricação :</p>
+                        <input type="date" placeholder="Insira a data de fab" class="inputFab">
+                        <p class="text">Insira a data de Validade : </p>
+                        <input type="date" placeholder="Insira a data de validade" class="inputVal">
+                        <button onclick="main()">Atualizar</button>
+
+                    </div>
 <table>
                         <tr>
                 
@@ -54,16 +64,7 @@
                         </tr>
                        
 </table>
-                    <div class="inputs">
-                        <input type="text" placeholder="Insira o produto" class="inputProd" >
-                        <input type="text" placeholder="Insira o preço" class="inputPrec">
-                        <p class="text">Insira a data de fabricação :</p>
-                        <input type="date" placeholder="Insira a data de fab" class="inputFab">
-                        <p class="text">Insira a data de Validade : </p>
-                        <input type="date" placeholder="Insira a data de validade" class="inputVal">
-                        <button onclick="printa()">Atualizar</button>
-
-                    </div>
+                   
                     
                         
 </body>

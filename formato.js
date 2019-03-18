@@ -1,12 +1,8 @@
 
 
-function printa(){
+function printa(nome,preco,dataFab,dataVal){
 
-    var nome = document.createTextNode(document.querySelector(".inputProd").value)
-    var preco = document.createTextNode(parseFloat(document.querySelector(".inputPrec").value))
-    var dataFab = document.createTextNode(document.querySelector(".inputFab").value)
-    var dataVal = document.createTextNode(document.querySelector(".inputVal").value)
-
+    
     
     var form= [nome,preco,dataFab,dataVal]
 
@@ -22,5 +18,28 @@ function printa(){
             table.appendChild(tr)
             
     }
+
+}
+function valida(nome,preco,dataFab,dataVal){
+
+
+    if (preco==NaN){
+
+        alert("preco invalido")
+
+    }
+      else{  printa(nome,preco,dataFab,dataVal)
+
+      }
+}
+
+function main(){
+
+    var nome = document.createTextNode(document.querySelector(".inputProd").value)
+    var preco = document.createTextNode(parseFloat(document.querySelector(".inputPrec").value))
+    var dataFab = document.createTextNode(document.querySelector(".inputFab").value)
+    var dataVal = document.createTextNode(document.querySelector(".inputVal").value)
+    printa(nome,preco,dataFab,dataVal)
+
 
 }
