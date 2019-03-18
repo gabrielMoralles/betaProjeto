@@ -1,5 +1,5 @@
 
-parseFloat
+
 function printa(){
 
     var nome = document.createTextNode(document.querySelector(".inputProd").value)
@@ -24,18 +24,3 @@ function printa(){
     }
 
 }
-
-
-
-
-
-function atualizaLista(){
-
-    var btn = document.createElement("t");        
-    var t = document.createTextNode(prompt("Escreva seu nome"));       
-    btn.appendChild(t);                                
-    document.body.appendChild(btn);      
-    
-    
-    }
-    

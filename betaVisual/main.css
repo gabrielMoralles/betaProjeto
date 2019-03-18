@@ -57,8 +57,9 @@ h1 {
 table {
 	margin: auto;
 	width: 50%;
-	border: 3px solid green;
 	padding: 10px;
+	background-color: rgba(0, 150, 250, 0.11);
+	margin-top: 1rem;
 	
  }
  
@@ -83,7 +84,7 @@ table{
 		display:flex;	
 		flex-direction:row; 
 		margin: auto;
-		width: 95%;
+		width: 80%;
 		border: 1px solid black;
 		margin-top: 10px;
 		
@@ -95,16 +96,27 @@ button{
 
 
   margin: auto;
-  
   border: 3px solid green;
-  padding: 10px;
-
+  
 
 }
 
-.inputProd,.inputPrec,.inputFab,.inputVal{
+.inputPrec,.inputFab,.inputVal{
+
+	margin-left: 1rem;
+	
+	
+}
+
+.text{
+
+	padding-top: 5px;
+
+}
+
+.inputProd :focus{
+
+	border-color: yellow;
 
 
-	padding-right: 1rem;
-	padding-left: 1rem;
 }
