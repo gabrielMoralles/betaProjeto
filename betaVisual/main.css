@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 html,body{
-    background: url("https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?cs=srgb&dl=background-background-image-clear-sky-1054222.jpg&fm=jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?cs=srgb&dl=background-background-image-clear-sky-1054222.jpg&fm=jpg") fixed;
+    background-size: 100%;
+    background-position: center;
     height: 100%;
-	font-family: sans-serif;
-	font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {
@@ -20,21 +19,20 @@ h1 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
-
-
-
 }
+p{
 
+  border-color: red;
+}
 table {
 	margin: auto;
 	width: 50%;
 	padding: 10px;
 	background-color: rgba(0, 150, 250, 0.11);
 	margin-top: 1rem;
-	
+
  }
- 
+
  table, th, td {
 	border: 1px solid black;
  }
@@ -53,22 +51,22 @@ table{
 
 .inputs{
 
-		display:flex;	
-		flex-direction:row; 
+		display:flex;
+		flex-direction:row;
 		margin: auto;
 
 		border: 1px solid black;
 		margin-top: 10px;
-		
+
 	}
 
 
 
-.inputPrec,.inputFab,.inputVal{
+.inputPrec,.inputFab,.inputVal,.inputQtd,.inputProd,{
 
-	margin-left: 1rem;
-	
-	
+	margin-left: 10px;
+
+
 }
 
 .text{
@@ -86,12 +84,17 @@ table{
 
 button{
 
-	border-radius: 10rem;
+	bottom: center;
 	background-color: rgba(0, 150, 250, 0.11);
+  border-color: green;
+  border-style: inset;
+  border-bottom-left-radius:10px;
+  position: relative;
+
 }
 #title{
 	font-family: 'Kanit', sans-serif;
-	
+
 
 }
 #navtext{

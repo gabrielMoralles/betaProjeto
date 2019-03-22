@@ -2,8 +2,8 @@
 
 function printa(qtd,nome,preco,dataFab,dataVal){
 
-    
-    
+
+
     var form= [qtd,nome,preco,dataFab,dataVal]
 
     var tr= document.createElement("tr")
@@ -12,11 +12,11 @@ function printa(qtd,nome,preco,dataFab,dataVal){
             var table = document.querySelector("table")
             var td= document.createElement("td")
 
-            
+
             td.appendChild(form[x])
             tr.appendChild(td)
             table.appendChild(tr)
-            
+
     }
 
 }
